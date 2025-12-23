@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damascus Events</title>
-    <link rel="stylesheet" href="fontawesome/css/all.min.css"/>
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="fontawesome/js/all.min.js"></script>
     <script src="fontawesome/js/fontawesome.min.js"></script>
     <script src="js/js.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header>
             <navbar>
-                <img src="img/logo.jpeg" alt="A logo of website contain city name"/>
+                <img src="img/logo.jpeg" class="logo" alt="A logo of website contain city name" />
                 <ul>
                     <li><a href="index.html"><i class="fa fa-home icons"></i>Main Page</a></li>
                     <li><a href="events.html"><i class="fa fa-tags"></i>Events</a></li>
@@ -25,6 +27,7 @@
                 </ul>
             </navbar>
         </header>
+        <hr>
         <main>
             <table id="event-info">
                 <tr>
@@ -40,39 +43,58 @@
                     <td>Write The message</td>
                 </tr>
             </table>
-            <table>
-                <thead>
-                    <th></th>
-                    <th>Name</th>
-                    <th>The Roles</th>
-                </thead>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <!-- end of event info-->
+            <section id="team_members">
+                <article class="team_member">
+                    <img src="img/AK.png" class="member_image">
+                    <span class="member_name">Ammar_376444</span>
+                    <p class="member_role">Construct the whole Html of website</p>
+                </article>
+                <article class="team_member">
+                    <img src="img/ab.jpeg" class="member_image">
+                    <span class="member_name">ahmad_385058</span>
+                    <p class="member_role">design the website via css & bootstrab</p>
+                </article>
+                <article class="team_member">
+                    <img src="#" class="member_image">
+                    <span class="member_name">Fahd</span>
+                    <p class="member_role">Get the contents' info and add them</p>
+                </article>
+                <article class="team_member">
+                    <img src="#" class="member_image">
+                    <span class="member_name">Mouen</span>
+                    <p class="member_role">write js scripts</p>
+                </article>
+            </section>
+            <!--end of section team_members-->
+            <section id="additional_info">
+                <article id="policies">
+                    <ul id="policies_list">
+                        <li>policies 1</li>
+                        <li>policies 2</li>
+                        <li>policies 3</li>
+                        <li>policies 4</li>
+                    </ul>
+                </article>
+                <article id="Conditions">
+                    <ul id="Conditions_list">
+                        <li>Conditions 1</li>
+                        <li>Conditions 2</li>
+                        <li>Conditions 3</li>
+                        <li>Conditions 4</li>
+                    </ul>
+                </article>
+                <article></article>
+            </section>
+            <!--end of section additional info-->
         </main>
+        <hr>
         <footer>
-            <span><i class="fa fa-copyright"></i>Copy Right reversed 2026</span>
-            <span><a href="tel:00963930221387"><i class="fas fa-phone"> </i>contact us via mobile</a></span>
-            <span><a href="mailto:ammarkhafaja92@gmail.com"><i class="fas fa-envelope-open"></i>contact us via Mail</a></span>
-            <br/><span> Follow us</span>
+            <span class="copyright"><i class="fa fa-copyright"></i>Copy Right reversed 2026</span>
+            <span class="contact-tools">contact us via<a href="tel:00963930221387"><i class="fas fa-phone"> </i> mobile</a></span>
+            <span><a href="mailto:ammarkhafaja92@gmail.com"><i class="fas fa-envelope-open"></i> Mail</a></span>
+            <br/>
+            <span> Follow us</span>
             <div class="social-links">
                 <a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -82,4 +104,5 @@
         </footer>
     </div>
 </body>
+
 </html>
