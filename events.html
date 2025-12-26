@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="events_page_container mycontainer">
         <header>
             <navbar>
                 <img src="img/logo.jpeg" class="logo" alt="A logo of website contain city name" />
@@ -27,11 +27,151 @@
                 </ul>
             </navbar>
         </header>
+        <hr>
         <main>
+            <section id="filter_search_form">
+                <form method="post" action="#" id="form_search">
+                    <fieldset><legend>Seach & Filtering Bar</legend>
+                        <label for="search_input">Search: </label>
+                        <input type="search" name="Search" id="search_input" placeholder="Search..." required/>
+                        <input type="submit" value="Search">
 
+                        <input type="date" title="search for an event at a specefic date" onchange="">
+                        
+                        <select id="event_categories_browse" onchange="" title="Events Categiries">
+                            <option value="0" selected hidden disabled>Event Categories</option>
+                            <option value="Cultural Events">Cultural Events</option>
+                            <option value="Sports Events">Sports Events</option>
+                            <option value="Musical Events">Musical Events</option>
+                            <option value="Familial Events">Familial Events</option>
+                        </select>
+                    
+                        <select id="event_location_browse" onchange="" title="Events Location">
+                            <option selected hidden disabled>Event Location</option>
+                            <option value="bab_touma">Bab touma</option>
+                            <option value="mazze">Mazze</option>
+                            <option value="mayysat">AL-mayysat sqr</option>
+                            <option value="almidan">Al-Middan</option>
+                        </select>
+                    </fieldset>
+                </form><!--end of search_filter_form-->
+            </section><!--end of section filtering-->
+            <section id="events_container">
+                <article class="event" id="event_one">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 1</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_one_details" target="_blank">More Details...</a>
+                </article>
+                
+                <article class="event" id="event_two">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 2</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_two_details" target="_blank">More Details...</a>
+                </article>
+
+                <article class="event" id="event_three">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 3</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_three_details" target="_blank">More Details...</a>
+                </article>
+
+                <article class="event" id="event_four">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 4</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_four_details" target="_blank">More Details...</a>
+                </article>
+
+                <article class="event" id="event_five">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 5</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_five_details" target="_blank">More Details...</a>
+                </article>
+
+                <article class="event" id="event_six">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 6</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_six_details" target="_blank">More Details...</a>
+                </article>
+
+                <article class="event" id="event_seven">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 7</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_seven_details" target="_blank">More Details...</a>
+                </article>
+
+                <article class="event" id="event_eight">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 8</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_eight_details" target="_blank">More Details...</a>
+                </article>
+
+                <article class="event" id="event_nine">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 9</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_nine_details" target="_blank">More Details...</a>
+                </article>
+
+                <article class="event" id="event_ten">
+                    <img src="#" class="event_img" alt="">
+                    <h3 class="event_title" title="Event Title">Event Title 10</h3>
+                    <span class="event_date" title="Event begin on">Event start</span>
+                    <span class="event_date" title="Event end on">Event end</span>
+                    <span class="event_location" title="Event Location">Event Location</span>
+                    <span class="event_category" title="Event Category">Event Category</span>
+                    <span class="event_description" title="Event Description">Event Description</span>
+                    <a class="event_more_details" href="event.html#event_ten_details" target="_blank">More Details...</a>
+                </article>
+
+            </section><!--end of section events container-->
         </main>
+        <hr>
         <footer>
-            <span class="copyright"><i class="fa fa-copyright"></i>Copy Right reversed 2026</span>
+            <span class="copyright"><i class="fa fa-copyright"></i>Copy Right reversed 2026</span><br>
             <span class="contact-tools">contact us via<a href="tel:00963930221387"><i class="fas fa-phone"> </i> mobile</a></span>
             <span><a href="mailto:ammarkhafaja92@gmail.com"><i class="fas fa-envelope-open"></i> Mail</a></span>
             <br/>
@@ -43,7 +183,7 @@
                 <a href="https://www.youtube.com" title="Youtube"><i class="fab fa-youtube"></i></a>
             </div>
         </footer>
-    </div>
+    </div><!--end of events_page_container-->
 </body>
 
 </html>

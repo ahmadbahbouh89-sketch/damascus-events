@@ -1,3 +1,9 @@
+<!--
+    notes:
+    - the image of event is the first image from event images gallery
+    - the id of event is the id of article element that contain the event info
+    - the related events in event section should be another existed events so the image and title should be matched
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +20,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="event_page_container mycontainer">
         <header>
             <navbar>
                 <img src="img/logo.jpeg" class="logo" alt="A logo of website contain city name" />
@@ -27,11 +33,311 @@
                 </ul>
             </navbar>
         </header>
+        <hr>
         <main>
+           <section class="event_details" id="event_one_details"> <!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 1</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+           </section> <!--end of event_one_details-->
 
+           <section class="event_details" id="event_two_details"><!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 2</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+            </section> <!--end of event_two_details-->
+
+            <section class="event_details" id="event_three_details"><!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 3</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+            </section> <!--end of event_three_details-->
+
+            <section class="event_details" id="event_four_details"><!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 4</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+            </section> <!--end of event_four_details-->
+
+            <section class="event_details" id="event_five_details"><!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 5</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+            </section> <!--end of event_five_details-->
+
+            <section class="event_details" id="event_six_details"><!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 6</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+            </section> <!--end of event_six_details-->
+
+            <section class="event_details" id="event_seven_details"><!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 7</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+            </section> <!--end of event_seven_details-->
+
+            <section class="event_details" id="event_eight_details"><!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 8</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+            </section> <!--end of event_eight_details-->
+
+            <section class="event_details" id="event_nine_details"><!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 9</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+            </section> <!--end of event_nine_details-->
+
+            <section class="event_details" id="event_ten_details"><!--the element contain event-->
+                <article class="event_details_info">
+                    <h2 class="event_details_title">Event Title 10</h2>
+                    <p class="event_details_start_date">Event Start AT:</p>
+                    <p class="event_details_end_date">Event end AT:</p>
+                    <p class="event_details_location">Event Location</p>
+                    <img src="#" class="image_of_map" alt="">
+                    <p class="event_details_full_description">Write Full Description</p>
+                    <div class="event_images_gallery">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                <article class="event_details_buttons">
+                    <button id="add_to_calender" value="Add_to_calender">Add to Calender</button>
+                    <button id="share" value="share">Share</button>
+                </article>
+                <article class="event_details_related_events">
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                    <figure>
+                        <a href="#"><img src="#" class="imgs_related_events" alt=""></a><!--select the related event and set its image to src and its id to href-->
+                        <figcaption>event Title</figcaption>
+                    </figure> 
+                </article>
+            </section> <!--end of event_ten_details-->
         </main>
+        <hr>
         <footer>
-            <span class="copyright"><i class="fa fa-copyright"></i>Copy Right reversed 2026</span>
+            <span class="copyright"><i class="fa fa-copyright"></i>Copy Right reversed 2026</span><br>
             <span class="contact-tools">contact us via<a href="tel:00963930221387"><i class="fas fa-phone"> </i> mobile</a></span>
             <span><a href="mailto:ammarkhafaja92@gmail.com"><i class="fas fa-envelope-open"></i> Mail</a></span>
             <br/>
@@ -43,7 +349,7 @@
                 <a href="https://www.youtube.com" title="Youtube"><i class="fab fa-youtube"></i></a>
             </div>
         </footer>
-    </div>
+    </div><!--end of event_page_container-->
 </body>
 
 </html>
