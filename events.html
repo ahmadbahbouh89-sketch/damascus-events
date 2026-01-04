@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <div class="events_page_container mycontainer">
+    <div class="event_page_container mycontainer">
         <header>
             <navbar>
-                <img src="img/logo.jpeg" class="logo" alt="A logo of website contain city name" />
+                <img src="img/logo.jpeg" class="logo" alt="Website logo containing the city name" />
                 <ul>
                     <li><a href="index.html"><i class="fa fa-home icons"></i>Main Page</a></li>
                     <li><a href="events.html"><i class="fa fa-tags"></i>Events</a></li>
@@ -28,154 +28,171 @@
             </navbar>
         </header>
         <hr>
+
         <main>
+            <!-- Search & Filter Section -->
             <section id="filter_search_form">
                 <form method="post" action="#" id="form_search">
-                    <fieldset><legend>Seach & Filtering Bar</legend>
-                        <label for="search_input">Search: </label>
-                        <input type="search" name="Search" id="search_input" placeholder="Search..." required/>
+                    <fieldset>
+                        <legend>Search & Filter Events</legend>
+                        <label for="search_input">Search:</label>
+                        <input type="search" name="Search" id="search_input" placeholder="Search..." required />
                         <input type="submit" value="Search">
 
-                        <input type="date" title="search for an event at a specefic date" onchange="">
-                        
-                        <select id="event_categories_browse" onchange="" title="Events Categiries">
-                            <option value="0" selected hidden disabled>Event Categories</option>
+                        <input type="date" title="Search for an event on a specific date" />
+
+                        <select id="event_categories_browse" title="Event Categories">
+                            <option value="" selected hidden disabled>Event Categories</option>
                             <option value="Cultural Events">Cultural Events</option>
                             <option value="Sports Events">Sports Events</option>
                             <option value="Musical Events">Musical Events</option>
                             <option value="Familial Events">Familial Events</option>
                         </select>
-                    
-                        <select id="event_location_browse" onchange="" title="Events Location">
-                            <option selected hidden disabled>Event Location</option>
-                            <option value="bab_touma">Bab touma</option>
+
+                        <select id="event_location_browse" title="Event Location">
+                            <option value="" selected hidden disabled>Event Location</option>
+                            <option value="bab_touma">Bab Touma</option>
                             <option value="mazze">Mazze</option>
-                            <option value="mayysat">AL-mayysat sqr</option>
-                            <option value="almidan">Al-Middan</option>
+                            <option value="mayysat">Al-Mayysat Square</option>
+                            <option value="almidan">Al-Midan</option>
                         </select>
                     </fieldset>
-                </form><!--end of search_filter_form-->
-            </section><!--end of section filtering-->
+                </form>
+            </section>
+
+            <!-- Events Container -->
             <section id="events_container">
+                
+                <!-- Event 1 -->
                 <article class="event" id="event_one">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 1</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="event2_1.jpg" class="event_img" alt="Dawn of Freedom Carnival">
+                    <h3 class="event_title" title="Dawn of Freedom Carnival">Dawn of Freedom Carnival</h3>
+                    <span class="event_date" title="Event starts on">08/12/2025 03:00 PM</span>
+                    <span class="event_date" title="Event ends on">08/12/2025 06:00 PM</span>
+                    <span class="event_location" title="Event Location">From Abbasiyin Square to Umayyad Square</span>
+                    <span class="event_category" title="Event Category">Cultural Events</span>
+                    <span class="event_description" title="Event Description">A massive public parade with music, floats, and community celebration.</span>
                     <a class="event_more_details" href="event.html#event_one_details" target="_blank">More Details...</a>
                 </article>
-                
+
+                <!-- Event 2 -->
                 <article class="event" id="event_two">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 2</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="event3_1.jpg" class="event_img" alt="One Syria Operetta">
+                    <h3 class="event_title" title="One Syria Operetta">One Syria Operetta</h3>
+                    <span class="event_date" title="Event starts on">08/12/2025 08:00 PM</span>
+                    <span class="event_date" title="Event ends on">08/12/2025 10:30 PM</span>
+                    <span class="event_location" title="Event Location">Damascus Opera House</span>
+                    <span class="event_category" title="Event Category">Musical Events</span>
+                    <span class="event_description" title="Event Description">Artistic performance blending orchestral music and dance to tell Syria's story.</span>
                     <a class="event_more_details" href="event.html#event_two_details" target="_blank">More Details...</a>
                 </article>
 
+                <!-- Event 3 -->
                 <article class="event" id="event_three">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 3</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="The_Lit_Tree.jpg" class="event_img" alt="Lighting of Liberation & Christmas Tree">
+                    <h3 class="event_title" title="Lighting of Liberation & Christmas Tree">Lighting of Liberation & Christmas Tree</h3>
+                    <span class="event_date" title="Event starts on">15/12/2025 06:00 PM</span>
+                    <span class="event_date" title="Event ends on">15/12/2025 08:00 PM</span>
+                    <span class="event_location" title="Event Location">Bab Touma Square</span>
+                    <span class="event_category" title="Event Category">Familial Events</span>
+                    <span class="event_description" title="Event Description">Decorating the largest Christmas tree in Damascus with community celebration.</span>
                     <a class="event_more_details" href="event.html#event_three_details" target="_blank">More Details...</a>
                 </article>
 
+                <!-- Event 4 -->
                 <article class="event" id="event_four">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 4</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="Traditional_Dishes.jpg" class="event_img" alt="Bite of Freedom Festival">
+                    <h3 class="event_title" title="Bite of Freedom Festival">Bite of Freedom Festival</h3>
+                    <span class="event_date" title="Event starts on">18/12/2025 12:00 PM</span>
+                    <span class="event_date" title="Event ends on">22/12/2025 11:00 PM</span>
+                    <span class="event_location" title="Event Location">Abu Rummaneh Street</span>
+                    <span class="event_category" title="Event Category">Cultural Events</span>
+                    <span class="event_description" title="Event Description">Open market celebrating Syrian cuisine from all provinces.</span>
                     <a class="event_more_details" href="event.html#event_four_details" target="_blank">More Details...</a>
                 </article>
 
+                <!-- Event 5 -->
                 <article class="event" id="event_five">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 5</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="Exhibition_Halls.jpg" class="event_img" alt="Detainees' Memory and Hope Exhibition">
+                    <h3 class="event_title" title="Detainees' Memory and Hope Exhibition">Detainees' Memory and Hope Exhibition</h3>
+                    <span class="event_date" title="Event starts on">26/12/2025 10:00 AM</span>
+                    <span class="event_date" title="Event ends on">30/12/2025 06:00 PM</span>
+                    <span class="event_location" title="Event Location">Mezzeh Prison (The New National Museum)</span>
+                    <span class="event_category" title="Event Category">Cultural Events</span>
+                    <span class="event_description" title="Event Description">Art exhibition documenting detainees' stories and sacrifices.</span>
                     <a class="event_more_details" href="event.html#event_five_details" target="_blank">More Details...</a>
                 </article>
 
+                <!-- Event 6 -->
                 <article class="event" id="event_six">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 6</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="event8_1.jpg" class="event_img" alt="New Syria Marathon">
+                    <h3 class="event_title" title="New Syria Marathon">New Syria Marathon</h3>
+                    <span class="event_date" title="Event starts on">28/12/2025 08:00 AM</span>
+                    <span class="event_date" title="Event ends on">28/12/2025 12:00 PM</span>
+                    <span class="event_location" title="Event Location">Damascus International Airport Road</span>
+                    <span class="event_category" title="Event Category">Sports Events</span>
+                    <span class="event_description" title="Event Description">A mass sporting event for all ages symbolizing hope and freedom.</span>
                     <a class="event_more_details" href="event.html#event_six_details" target="_blank">More Details...</a>
                 </article>
 
+                <!-- Event 7 -->
                 <article class="event" id="event_seven">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 7</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="event9_1.jpg" class="event_img" alt="Poems from Exile Evening">
+                    <h3 class="event_title" title="Poems from Exile Evening">Poems from Exile Evening</h3>
+                    <span class="event_date" title="Event starts on">30/12/2025 07:00 PM</span>
+                    <span class="event_date" title="Event ends on">30/12/2025 09:00 PM</span>
+                    <span class="event_location" title="Event Location">Tekkiye Suleymaniye</span>
+                    <span class="event_category" title="Event Category">Cultural Events</span>
+                    <span class="event_description" title="Event Description">Literary evening gathering Syrian poets from abroad.</span>
                     <a class="event_more_details" href="event.html#event_seven_details" target="_blank">More Details...</a>
                 </article>
 
+                <!-- Event 8 -->
                 <article class="event" id="event_eight">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 8</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="Fireworks.jpg" class="event_img" alt="Syrian New Year Celebration">
+                    <h3 class="event_title" title="Syrian New Year Celebration">Syrian New Year Celebration</h3>
+                    <span class="event_date" title="Event starts on">31/12/2025 09:00 PM</span>
+                    <span class="event_date" title="Event ends on">01/01/2026 01:00 AM</span>
+                    <span class="event_location" title="Event Location">Mount Qasioun Summit</span>
+                    <span class="event_category" title="Event Category">Cultural Events</span>
+                    <span class="event_description" title="Event Description">Fireworks and songs celebrating the New Year in Damascus.</span>
                     <a class="event_more_details" href="event.html#event_eight_details" target="_blank">More Details...</a>
                 </article>
 
+                <!-- Event 9 -->
                 <article class="event" id="event_nine">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 9</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="Film_Screening.jpg" class="event_img" alt="Freedom Amateur Cinema Festival">
+                    <h3 class="event_title" title="Freedom Amateur Cinema Festival">Freedom Amateur Cinema Festival</h3>
+                    <span class="event_date" title="Event starts on">12/12/2025 04:00 PM</span>
+                    <span class="event_date" title="Event ends on">14/12/2025 10:00 PM</span>
+                    <span class="event_location" title="Event Location">Al-Kindi Cinema and Al-Mutanabbi Street</span>
+                    <span class="event_category" title="Event Category">Cultural Events</span>
+                    <span class="event_description" title="Event Description">Screening of short films documenting resilience during the revolution.</span>
                     <a class="event_more_details" href="event.html#event_nine_details" target="_blank">More Details...</a>
                 </article>
 
+                <!-- Event 10 -->
                 <article class="event" id="event_ten">
-                    <img src="#" class="event_img" alt="">
-                    <h3 class="event_title" title="Event Title">Event Title 10</h3>
-                    <span class="event_date" title="Event begin on">Event start</span>
-                    <span class="event_date" title="Event end on">Event end</span>
-                    <span class="event_location" title="Event Location">Event Location</span>
-                    <span class="event_category" title="Event Category">Event Category</span>
-                    <span class="event_description" title="Event Description">Event Description</span>
+                    <img src="Artists_Painting.jpg" class="event_img" alt="Victory Mural Painting">
+                    <h3 class="event_title" title="Victory Mural Painting">Victory Mural Painting</h3>
+                    <span class="event_date" title="Event starts on">20/12/2025 09:00 AM</span>
+                    <span class="event_date" title="Event ends on">21/12/2025 05:00 PM</span>
+                    <span class="event_location" title="Event Location">Umayyad Square Tunnel Walls</span>
+                    <span class="event_category" title="Event Category">Cultural Events</span>
+                    <span class="event_description" title="Event Description">Graffiti artists painting walls to celebrate liberation.</span>
                     <a class="event_more_details" href="event.html#event_ten_details" target="_blank">More Details...</a>
                 </article>
 
-            </section><!--end of section events container-->
+            </section>
         </main>
+
         <hr>
         <footer>
-            <span class="copyright"><i class="fa fa-copyright"></i>Copy Right reversed 2026</span><br>
-            <span class="contact-tools">contact us via<a href="tel:00963930221387"><i class="fas fa-phone"> </i> mobile</a></span>
+            <span class="copyright"><i class="fa fa-copyright"></i> Copyright reserved 2026</span><br>
+            <span class="contact-tools">Contact us via <a href="tel:00963930221387"><i class="fas fa-phone"></i> Mobile</a></span>
             <span><a href="mailto:ammarkhafaja92@gmail.com"><i class="fas fa-envelope-open"></i> Mail</a></span>
             <br/>
-            <span> Follow us</span>
+            <span>Follow us:</span>
             <div class="social-links">
                 <a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -183,7 +200,7 @@
                 <a href="https://www.youtube.com" title="Youtube"><i class="fab fa-youtube"></i></a>
             </div>
         </footer>
-    </div><!--end of events_page_container-->
+    </div>
 </body>
 
 </html>
