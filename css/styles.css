@@ -1,0 +1,492 @@
+/* Import Tajawal font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;600;700&display=swap');
+
+/* global variables */
+:root{
+  --primary: #0092CA;
+  --secondary: #393E46;
+  --accent: #005D97;
+  --bg: #FFFFFF;
+  --card: #F4F7FA;
+  --text: #393E46;
+  --muted: #6E7478;
+  --success: #28A745;
+  --warning: #F0AD4E;
+  --danger: #DC3545;
+  --font-base: "Tajawal", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Tajawal", Georgia, serif;
+  --fs-base: 16px;
+  --lh-base: 1.6;
+  --h1: 2.25rem;
+  --h2: 1.75rem;
+  --h3: 1.375rem;
+  --h4: 1.125rem;
+  --h5: 1rem;
+  --h6: 0.875rem;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+  --radius: 10px;
+  --space: 8px;
+  --shadow: 0 8px 20px rgba(9,30,63,0.06);
+  --focus: rgba(0,146,202,0.16);
+  --max-width: 1100px;
+}
+
+/* box-sizing check for all elements */
+*,*::before,*::after
+{
+  box-sizing:border-box;
+}
+
+/* root html styling */
+html
+{
+  font-size:var(--fs-base);
+  -webkit-text-size-adjust:100%;
+}
+
+/* body default font and background  */
+body
+{
+  margin:0;
+  font-family:var(--font-base);
+  line-height:var(--lh-base);
+  color:var(--text);
+  background:var(--bg);
+  font-weight:var(--fw-400);
+}
+
+/* make container elements width dynamic */
+.container
+{
+  max-width:var(--max-width);
+  margin-left:auto;
+  margin-right:auto;
+  /* calculate left and right padding */
+  padding-left:calc(var(--space) * 2);
+  padding-right:calc(var(--space) * 2);
+}
+
+/* header wrapper styling */
+.header-wrap
+{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:12px;
+  background:linear-gradient(180deg, rgba(0,146,202,0.03), rgba(0,146,202,0.01));
+  border-radius:calc(var(--radius) + 2px);
+  box-shadow:var(--shadow);
+}
+
+/* logo image size */
+.logo
+{
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* brand container aligment and color */
+.brand
+{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:var(--secondary);
+}
+
+/* brand image styling */
+.brand img
+{
+  height:48px;
+  width:auto;
+  border-radius:6px;
+  object-fit:cover;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* primary navigation items */
+.nav
+{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+/* navigation links */
+.nav a
+{
+  color:var(--secondary);
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:6px;
+  font-weight:var(--fw-600);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* hover state for nav links */
+.nav a:hover
+{
+  background:rgba(0,146,202,0.06);
+  color:var(--primary);
+}
+
+/* hr element styling */
+.hr
+{
+  height:1px;
+  background:linear-gradient(90deg, rgba(57,62,70,0.06), rgba(57,62,70,0.02));
+  border:none;
+  margin:20px 0;
+  border-radius:2px;
+}
+
+/* main content spacing */
+.main
+{
+  display:block;
+  margin-bottom:20px;
+}
+
+/* team member block styling */
+article.team_member
+{
+  background-color: var(--card);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* team member hover effect */
+article.team_member:hover
+{
+  background-color: #0091ca3b;
+}
+
+/* card element alignment and coloring */
+.card
+{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+
+/* card title styling */
+.card-title
+{
+  margin:0 0 12px 0;
+  font-family:var(--font-heading);
+  color:var(--secondary);
+  font-size:var(--h3);
+  font-weight:var(--fw-600);
+}
+
+/* lead paragraph styling */
+.lead
+{
+  margin:0 0 16px 0;
+  color:var(--muted);
+  font-size:0.98rem;
+}
+
+/* form styling */
+form
+{
+  width:100%;
+}
+
+/* fieldset styling */
+fieldset
+{
+  border:1px solid rgba(57,62,70,0.06);
+  padding:14px;
+  border-radius:8px;
+  margin-bottom:16px;
+}
+
+/* legend styling */
+legend
+{
+  padding:0 8px;
+  font-weight:var(--fw-600);
+  color:var(--secondary);
+  font-size:0.98rem;
+}
+
+/* form row flex styling*/
+.form-row
+{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* form group flex styling */
+.form-group
+{
+  flex:1 1 220px;
+  min-width:220px;
+  margin-bottom:12px;
+}
+
+/* label element styling and alignment */
+label
+{
+  display:block;
+  margin-bottom:6px;
+  font-weight:var(--fw-600);
+  color:var(--secondary);
+  font-size:0.95rem;
+}
+
+/* inputs and textareas elements coloring and alignment */
+.input, textarea
+{
+  width:100%;
+  padding:12px 14px;
+  border-radius:8px;
+  border:1px solid rgba(57,62,70,0.08);
+  background:linear-gradient(180deg,#fff,#fbfbfb);
+  font-size:1rem;
+  color:var(--text);
+  transition:box-shadow .12s ease, border-color .12s ease;
+  outline:none;
+}
+
+/* focus state for inputs */
+.input:focus, textarea:focus
+{
+  border-color:var(--primary);
+  box-shadow:0 8px 20px rgba(0,146,202,0.12);
+}
+
+/* textarea sizing */
+textarea
+{
+  min-height:120px;
+  resize:vertical;
+}
+
+/* actions container layout */
+.actions
+{
+  display:flex;
+  gap:10px;
+  margin-top:8px;
+}
+
+/* buttons styling and flex sizing */
+.btn
+{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+  border:none;
+  font-weight:var(--fw-600);
+  transition:transform .08s ease, box-shadow .12s ease, background-color .12s ease;
+}
+
+/* active button effect */
+.btn:active
+{
+  transform:translateY(1px);
+}
+
+/* primary button styling */
+.btn-primary
+{
+  background:linear-gradient(180deg,var(--primary),var(--accent));
+  color:#fff;
+  box-shadow:0 10px 26px rgba(0,146,202,0.12);
+}
+
+.btn-outline
+{
+  background:transparent;
+  color:var(--primary);
+  border:1px solid rgba(0,146,202,0.12);
+}
+
+/* footer container layout and styling*/
+.footer
+{
+  margin-top:24px;
+  padding:16px;
+  border-radius:10px;
+  background: linear-gradient(to top, #0092CA, #005D97) !important;
+  color:#fff !important;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+/* left side of footer */
+.footer .left
+{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  font-size:0.95rem;
+}
+
+/* footer item (links) styling */
+.footer a
+{
+  color:#fff;
+  text-decoration:none;
+}
+
+/* hover effect for footer item (links) */
+.footer a:hover
+{
+  color:#111111;
+}
+
+/* footer social icons follow flex*/
+.social
+{
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+
+/* social links circle style and colors */
+.social a
+{
+  width:36px;
+  height:36px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:rgba(255,255,255,0.03);
+  color:#fff;
+  text-decoration:none;
+  transition:transform .12s ease, background .12s ease;
+}
+
+/* social links hover effect style and colors */
+.social a:hover
+{
+  transform:translateY(-3px);
+  background:rgba(255,255,255,0.06);
+}
+
+/* small text */
+.small
+{
+  font-size:0.85rem;
+  color:#fff;
+}
+
+/* alert padding and bold */
+.alert
+{
+  padding:12px;
+  border-radius:8px;
+  margin-bottom:12px;
+  font-weight:var(--fw-600);
+}
+
+/* success alert green background with white text */
+.alert-success
+{
+  background:var(--success);
+  color:#fff;
+}
+
+/* warning alert background with text */
+.alert-warning
+{
+  background:var(--warning);
+  color:#222;
+}
+
+/* danger alert red background with white text */
+.alert-danger
+{
+  background:var(--danger);
+  color:#fff;
+}
+
+:focus
+{
+  outline:none;
+  box-shadow:0 0 0 4px var(--focus);
+  border-radius:6px;
+}
+
+/* remove focus effect */
+:focus:not(:focus-visible)
+{
+  box-shadow:none;
+}
+
+.visually-hidden
+{
+  position:absolute!important;
+  width:1px;height:1px;
+  padding:0;margin:-1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* mobile size for device upto  576px width */
+@media (max-width:576px)
+{
+  .header-wrap
+  {
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .nav
+  {
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  .form-row
+  {
+    flex-direction:column;
+  }
+  .brand span
+  {
+    display:none;
+  }
+  .container
+  {
+    padding-left:12px;
+    padding-right:12px;
+  }
+}
+
+/* large screen for minimum width 768px */
+@media (min-width:768px)
+{
+  :root
+  {
+    --h1:2.75rem;
+    --h2:2rem;
+    --h3:1.5rem;
+  }
+  .card{padding:28px}
+  .brand img{height:56px}
+}
