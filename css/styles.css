@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Import Tajawal font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;600;700&display=swap');
 
@@ -491,7 +491,7 @@ textarea
   .card{padding:28px}
   .brand img{height:56px}
 }
-=======
+
 /* تنسيقات موحدة لجميع صفحات المشروع */
 
 /* 1. معرض الصور */
@@ -541,4 +541,4 @@ figcaption {
     margin-top: 5px;
     color: #555;
 }
->>>>>>> 7a43fab8c8ba9647317c327d628c23bcfb40f9bf
+
