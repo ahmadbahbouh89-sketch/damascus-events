@@ -1,131 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Damascus Events</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Font Awesome (local files as in your project) -->
-  <link rel="stylesheet" href="fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
-
-  <!-- Your custom stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Defer scripts -->
-  <script src="fontawesome/js/all.min.js" defer></script>
-  <script src="fontawesome/js/fontawesome.min.js" defer></script>
-  <script src="js/js.js" defer></script>
-
-  <!-- Bootstrap Bundle JS (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damascus Events</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="fontawesome/js/fontawesome.min.js"></script>
+    <script src="js/js.js"></script>
 </head>
+
 <body>
-
-  <div class="container py-4 about_page_container mycontainer">
-    <!-- Header / Navbar -->
-    <header class="mb-4">
-      <nav class="navbar navbar-expand-md p-0 align-items-center" aria-label="Main navigation">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-          <img src="img/logo.jpeg" class="logo" alt="A logo of website contain city name">
-          <!-- <span class="d-none d-sm-inline fw-bold text-dark">Damascus Events</span> -->
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home me-1"></i>Main Page</a></li>
-            <li class="nav-item"><a class="nav-link" href="events.html"><i class="fa fa-tags me-1"></i>Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="event.html"><i class="fa fa-tag me-1"></i>Event</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-id-card me-1"></i>About us</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-phone me-1"></i>Contact us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <hr class="my-4">
-
-    <!-- Main content -->
-    <main>
-
-      <!-- Event info table -->
-      <div class="table-responsive mb-4">
-        <table id="event-info" class="table table-borderless align-middle">
-          <tbody>
-            <tr>
-              <th scope="row" class="w-25">The target of Guide</th>
-              <td>The Damascus Events Guide aims to provide citizens and visitors with a reliable platform 
+    <div class="about_page_container mycontainer">
+        <header>
+            <navbar>
+                <img src="img/logo.jpeg" class="logo" alt="A logo of website contain city name" />
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home icons"></i>Main Page</a></li>
+                    <li><a href="events.html"><i class="fa fa-tags"></i>Events</a></li>
+                    <li><a href="event.html"><i class="fa fa-tag"></i>Event</a></li>
+                    <li><a href="about.html"><i class="fa fa-id-card icons"></i>About us</a></li>
+                    <li><a href="contact.html"><i class="fa fa-phone icons"></i>Contact us</a></li>
+                </ul>
+            </navbar>
+        </header>
+        <hr>
+        <main>
+          <table id="event-info">
+    <tr>
+        <th>The Target of Guide</th>
+        <td>
+            The Damascus Events Guide aims to provide citizens and visitors with a reliable platform 
             that showcases cultural, artistic, social, and entertainment events taking place in the city. 
             It helps users discover events easily, stay informed about upcoming activities, and engage 
-            with the vibrant life of Damascus.</td>
-            </tr>
-            <tr>
-              <th scope="row">The Vision of Guide</th>
-              <td>Our vision is to become the leading digital reference for events in Damascus, promoting 
+            with the vibrant life of Damascus.
+        </td>
+    </tr>
+    <tr>
+        <th>The Vision of Guide</th>
+        <td>
+            Our vision is to become the leading digital reference for events in Damascus, promoting 
             cultural diversity, encouraging community participation, and highlighting the city’s rich 
-            heritage through well-organized and accessible event information.</td>
-            </tr>
-            <tr>
-              <th scope="row">The Message To Society</th>
-              <td>We believe that events bring people together and strengthen social bonds. 
+            heritage through well-organized and accessible event information.
+        </td>
+    </tr>
+    <tr>
+        <th>The Message To Society</th>
+        <td>
+            We believe that events bring people together and strengthen social bonds. 
             Through this guide, we seek to support local initiatives, celebrate creativity, 
             and inspire hope and unity by connecting society with meaningful cultural and 
-            recreational experiences.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+            recreational experiences.
+        </td>
+    </tr>
+</table>
 
-      <!-- Team members -->
-      <section id="team_members" class="mb-4">
-        <div class="row g-4">
-          <div class="col-6 col-sm-4 col-md-3">
-            <article class="team_member text-center p-3 h-100">
-              <img src="img/team%20member/AK.png" alt="Ammar_376444" title="Ammar_376444" class="member_image mb-2" style="width:96px;height:96px;border-radius:50%;object-fit:cover;">
-              <span class="member_name d-block fw-semibold">Ammar Khafajah</span>
-              <p class="member_role mb-0 text-muted">CEO</p>
-            </article>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3">
-            <article class="team_member text-center p-3 h-100">
-              <img src="img/team%20member/ab.jpeg" alt="Ahmad_385058" title="ahmad_385058" class="member_image mb-2" style="width:96px;height:96px;border-radius:50%;object-fit:cover;">
-              <span class="member_name d-block fw-semibold">Ahmad Bahbouh</span>
-              <p class="member_role mb-0 text-muted">Event Manager</p>
-            </article>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3">
-            <article class="team_member text-center p-3 h-100">
-              <img src="img/team%20member/fahd.jpeg" alt="Fahd_384042" title="Fahd_384042" class="member_image mb-2" style="width:96px;height:96px;border-radius:50%;object-fit:cover;">
-              <span class="member_name d-block fw-semibold">Fahd Alnuwailati</span>
-              <p class="member_role mb-0 text-muted">Financial Manager</p>
-            </article>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3">
-            <article class="team_member text-center p-3 h-100">
-              <img src="img/team%20member/mouen.jpeg" alt="Moueen_377045" title="Moueen_377045" class="member_image mb-2" style="width:96px;height:96px;border-radius:50%;object-fit:cover;">
-              <span class="member_name d-block fw-semibold">Moueen Hamed</span>
-              <p class="member_role mb-0 text-muted">IT Manager</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Additional info -->
-      <section id="additional_info" class="row g-4">
-        <div class="col-12 col-md-6">
-          <article id="policies" class="card p-3 h-100">
-            <h2 class="article_title h5 mb-2">The Policies of Initialising Event</h2>
-            <ul id="policies_list" class="ps-3 mb-0">
-              <li>
+            <!-- end of event info-->
+            <section id="team_members">
+                <article class="team_member">
+                    <img src="img/team member/AK.png" alt="Ammar_376444" title="Ammar_376444" class="member_image">
+                    <span class="member_name">Ammar_376444</span>
+                    <p class="member_role">Construct the whole Html of website</p>
+                </article>
+                <article class="team_member">
+                    <img src="img/team member/ab.jpeg" class="member_image" alt="ahmad_385058" title="ahmad_385058">
+                    <span class="member_name">ahmad_385058</span>
+                    <p class="member_role">design the website via css & bootstrab</p>
+                </article>
+                <article class="team_member">
+                    <img src="img/team member/fahd.jpeg" alt="Fahd_384042" title="Fahd_384042" class="member_image">
+                    <span class="member_name">Fahd_384042</span>
+                    <p class="member_role">Get the contents' info and add them</p>
+                </article>
+                <article class="team_member">
+                    <img src="img/team member/mouen.jpeg" alt="Moueen_377045" title="Moueen_377045" class="member_image">
+                    <span class="member_name">Moueen_377045</span>
+                    <p class="member_role">write js scripts</p>
+                </article>
+            </section>
+            <!--end of section team_members-->
+            <section id="additional_info">
+            <article id="policies">
+    <h2 class="article_title">The Policies of Initialising Event</h2>
+    <ul id="policies_list">
+        <li>
             All events must align with the cultural, social, and ethical values of Damascus and respect 
             public traditions and diversity.
         </li>
@@ -139,15 +100,13 @@
         <li>
             Any event that incites violence, discrimination, or hatred will not be accepted or published.
         </li>
-            </ul>
-          </article>
-        </div>
+    </ul>
+</article>
 
-        <div class="col-12 col-md-6">
-          <article id="Conditions" class="card p-3 h-100">
-            <h2 class="article_title h5 mb-2">The Rules of Publishing</h2>
-            <ul id="Conditions_list" class="ps-3 mb-0">
-              <li>
+<article id="Conditions">
+    <h2 class="article_title">The Rules of Publishing</h2>
+    <ul id="Conditions_list">
+        <li>
             Event organizers must provide valid and up-to-date details before publishing any event.
         </li>
         <li>
@@ -160,59 +119,28 @@
             The website administration reserves the right to review, edit, or reject any event 
             submission that does not comply with publishing rules.
         </li>
-            </ul>
-          </article>
-        </div>
-      </section>
+    </ul>
+</article>
 
-    </main>
-
-    <hr class="my-4">
-
-    <!-- Footer -->
-<!-- Footer -->
-<footer class="footer mt-4 bg-light py-3">
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Left Column -->
-      <div class="col-12 col-md-6 mb-3 mb-md-0 text-center text-md-start">
-        <p class="small mb-1">
-          <i class="fa fa-copyright"></i>
-          Copy Right reserved 2026
-        </p>
-        <p class="small mb-0">
-          Contact us via:
-          <a href="tel:00963930221387" class="ms-2 text-decoration-none">
-            <i class="fas fa-phone"></i> Mobile
-          </a>
-          <a href="mailto:ammarkhafaja92@gmail.com" class="ms-3 text-decoration-none">
-            <i class="fas fa-envelope-open"></i> Mail
-          </a>
-        </p>
-      </div>
-
-      <!-- Right Column -->
-      <div class="col-12 col-md-6 text-center text-md-end">
-        <p class="small mb-1">Follow us</p>
-        <div class="social d-flex justify-content-center justify-content-md-end gap-3">
-          <a href="https://www.facebook.com" title="Facebook" class="text-decoration-none" aria-label="Facebook">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com" title="Instagram" class="text-decoration-none" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.twitter.com" title="X" class="text-decoration-none" aria-label="X">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.youtube.com" title="Youtube" class="text-decoration-none" aria-label="Youtube">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-  </div>
+                <article></article>
+            </section>
+            <!--end of section additional info-->
+        </main>
+        <hr>
+        <footer>
+            <span class="copyright"><i class="fa fa-copyright"></i>Copy Right reversed 2026</span><br>
+            <span class="contact-tools">contact us via<a href="tel:00963930221387"><i class="fas fa-phone"> </i> mobile</a></span>
+            <span><a href="mailto:ammarkhafaja92@gmail.com"><i class="fas fa-envelope-open"></i> Mail</a></span>
+            <br/>
+            <span> Follow us</span>
+            <div class="social-links">
+                <a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" title="X"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com" title="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </footer>
+    </div><!--end of about_page_container-->
 </body>
+
 </html>
