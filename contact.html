@@ -5,59 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damascus Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="fontawesome/js/all.min.js"></script>
-    <script src="fontawesome/js/fontawesome.min.js"></script>
-    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="fontawesome/js/all.min.js" defer></script>
+    <script src="fontawesome/js/fontawesome.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <body>
-    <div class="contact_page_container mycontainer">
-        <header>
-            <navbar>
-                <img src="img/logo.jpeg" class="logo" alt="A logo of website contain city name" />
-                <ul>
-                    <li><a href="index.html"><i class="fa fa-home icons"></i>Main Page</a></li>
-                    <li><a href="events.html"><i class="fa fa-tags"></i>Events</a></li>
-                    <li><a href="event.html"><i class="fa fa-tag"></i>Event</a></li>
-                    <li><a href="about.html"><i class="fa fa-id-card icons"></i>About us</a></li>
-                    <li><a href="contact.html"><i class="fa fa-phone icons"></i>Contact us</a></li>
-                </ul>
-            </navbar>
+    <div class="container py-4 contact_page_container mycontainer">
+        <header class="mb-4">
+            <nav class="navbar navbar-expand-md p-0 align-items-center" aria-label="Main navigation">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="img/logo.jpeg" class="logo" alt="A logo of website contain city name">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home me-1"></i>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html"><i class="fa fa-tags me-1"></i>Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="event.html"><i class="fa fa-tag me-1"></i>Event</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-id-card me-1"></i>About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-phone me-1"></i>Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <hr>
         <main>
             <form id="contact-form" method="post" action="#">
                 <fieldset>
-                    <legend>Personal Onformation</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" placeholder="Name" size="20" pattern="^[A-Za-z]+([ ][A-Za-z]+)*$" required autofocus/><br/>
-                    <label for="email">E-Mail:</label>
-                    <input type="email" name="email" placeholder="e-mail" required/><br/>
+                    <legend>Personal Information</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstname">First Name: <span class="required" aria-label="required">*</span></label>
+                            <input type="text" id="firstname" name="firstname" class="input" placeholder="First Name" required autofocus aria-required="true" aria-describedby="firstname-error" />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name: <span class="required" aria-label="required">*</span></label>
+                            <input type="text" id="lastname" name="lastname" class="input" placeholder="Last Name" required aria-required="true" aria-describedby="lastname-error" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail: <span class="required" aria-label="required">*</span></label>
+                        <input type="email" id="email" name="email" class="input" placeholder="your.email@example.com" required aria-required="true" aria-describedby="email-error" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone: <span class="required" aria-label="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" class="input" placeholder="+963 930 221 387" required aria-required="true" aria-describedby="phone-error" />
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address: <span class="required" aria-label="required">*</span></label>
+                        <input type="text" id="address" name="address" class="input" placeholder="Street, City, Country" required aria-required="true" aria-describedby="address-error" />
+                    </div>
                 </fieldset>
-                <label for="message">Message:</label>
-                <textarea name="message" placeholder="Message" rows="5" cols="25" required></textarea><br/>
-                <input type="submit" value="Submit" />
-                <input type="reset" value="Reset" />
+                <fieldset>
+                    <legend>Message Details</legend>
+                    <div class="form-group">
+                        <label for="subject">Subject: <span class="required" aria-label="required">*</span></label>
+                        <input type="text" id="subject" name="subject" class="input" placeholder="Message Subject" required aria-required="true" aria-describedby="subject-error" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message: <span class="required" aria-label="required">*</span></label>
+                        <textarea id="message" name="message" class="input" placeholder="Your message here..." rows="5" required aria-required="true" aria-describedby="message-error"></textarea>
+                    </div>
+                </fieldset>
+                <div class="actions">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                    <input type="reset" value="Reset" class="btn btn-outline" />
+                </div>
             </form>
         </main>
-        <hr>
-        <footer>
-            <span class="copyright"><i class="fa fa-copyright"></i>Copy Right reversed 2026</span><br>
-            <span class="contact-tools">contact us via<a href="tel:00963930221387"><i class="fas fa-phone"> </i> mobile</a></span>
-            <span><a href="mailto:ammarkhafaja92@gmail.com"><i class="fas fa-envelope-open"></i> Mail</a></span>
-            <br/>
-            <span> Follow us</span>
-            <div class="social-links">
-                <a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com" title="X"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com" title="Youtube"><i class="fab fa-youtube"></i></a>
+        <hr class="my-4">
+
+        <footer class="footer mt-4 bg-light py-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0 text-center text-md-start">
+                        <p class="small mb-1">
+                            <i class="fa fa-copyright"></i>
+                            Copy Right reserved 2026
+                        </p>
+                        <p class="small mb-0">
+                            Contact us via:
+                            <a href="tel:00963930221387" class="ms-2 text-decoration-none">
+                                <i class="fas fa-phone"></i> Mobile
+                            </a>
+                            <a href="mailto:ammarkhafaja92@gmail.com" class="ms-3 text-decoration-none">
+                                <i class="fas fa-envelope-open"></i> Mail
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <p class="small mb-1">Follow us</p>
+                        <div class="social d-flex justify-content-center justify-content-md-end gap-3">
+                            <a href="https://www.facebook.com" title="Facebook" class="text-decoration-none" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com" title="Instagram" class="text-decoration-none" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.twitter.com" title="X" class="text-decoration-none" aria-label="X">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.youtube.com" title="Youtube" class="text-decoration-none" aria-label="Youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
-    </div><!--end of contact_page_container-->
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 </body>
 
 </html>
